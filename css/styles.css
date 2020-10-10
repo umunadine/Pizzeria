@@ -10,6 +10,7 @@ header>div{
     padding-top: 200px;
    }
 nav{
+    position: fixed;
     width:100%;
     background-color:rgba(105,105,105, 0.6);
     }
@@ -21,8 +22,8 @@ li{
     }
 nav>ul>li>a{
       display:block;
-      padding:15px;
-      margin-right:0;
+      padding:10px;
+      margin-right:0px;
       text-transform:uppercase;
       color:black;
     }
