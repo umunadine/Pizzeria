@@ -39,3 +39,8 @@ header>div>h3{
         font-family: Dancing Script;
         font-weight: bold;
       }
+h2{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+}
