@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.5.1.js"></script>         
+        <script src="js/scripts.js"></script>
         <title>Litt Pizzeria</title>
     </head>
     <body>
@@ -34,37 +36,48 @@
      </div><br>
      <h2>Place your order</h2>
      <section>
-     <div id="order">
-         <label>Choose the pizza size:</label>
-         <select class="form-control" id="crust">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
-          <label>Choose the pizza crust:</label>
-         <select class="form-control" id="crust">
-            <option>Crispy</option>
-            <option>Stuffed</option>
-            <option>Gluten-free</option>
-          </select>
-          <label>Choose the pizza toppings:</label>
-          <select class="form-control" id="crust">
-             <option>Pepperoni</option>
-             <option>Supreme</option>
-             <option>Ham & Pineaple</option>
-             <option>Sausage</option>
-             <option>Seafood</option>
-             <option>BBQ sauce</option>
-             <option>Mushrooms</option>
-             <option>Ricotta, cherry tomato, baby spinach</option>
-           </select>
-           <label>How many pizza:</label>
-           <form>
-               <input id="numberofpizza" type="text" placeholder="Number of Pizzas" required>
-           </form><br><br>
-           <input id="delivery" type="submit" value="Delivery">
-           <input id="pick" type="submit" value="Pick Up">
-     </div>
+        <div id="order">
+            <label>Choose the pizza size:</label>
+            <select class="form-control" id="size">
+                <option>Small(Rwf 3000)</option>
+                <option>Medium(Rwf 4500)</option>
+                <option>Large(Rwf 6000)</option>
+             </select>
+             <label>Choose the pizza crust:</label>
+            <select class="form-control" id="crust">
+                <option>Crispy(Rwf 100)</option>
+                <option>Stuffed(Rwf 150)</option>
+                <option>Gluten-free(Rwf 200)</option>
+             </select>
+             <label>Choose the pizza toppings:</label>
+             <select class="form-control" id="toppings">
+                <option>Pepperoni(Rwf 200)</option>
+                <option>BBQ sauce(Rwf 200)</option>
+                <option>Mushrooms(Rwf 250)</option>
+              </select>
+              <label>How many pizza:</label>
+              <form>
+              <input id="numberofpizza" type="number" min="1" placeholder="Number of Pizzas" required><br><br>
+            </form><br><br>
+            <form>
+                <input id="delivery" type="submit" value="Delivery">
+              <input id="pick" type="submit" value="Pick Up"><br><br>
+            </form>
+        </div>
+        <div id="idk">
+            <h3>Your Order is as follows:</h3>
+            <ol id="yourOrder"><ol>
+        </div>
+        <div class="location">
+            <form>
+                <h3>DELIVERY</h3>
+                <h4>Please provide the following:</h4>
+                <input id="name" type="text" placeholder="Name" required><br>
+                <input id="number" type="text" placeholder="Phone number" required><br>
+                <input id="address" type="text" placeholder="Address" required><br><br>
+                <input id="checkout" type="submit" value="Checkout">
+            </form>
+        </div>
      </section>
      <div id="contacts">
          <h2>Contacts</h2>
